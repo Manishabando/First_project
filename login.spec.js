@@ -12,7 +12,7 @@
 
     await expect(page.getByRole("heading", { name: "Dashboard" })).toBeVisible()
 
-    await page.getByAltText("profile picture").click()
+    await page.getByAltText("profile picture").first().click()
 
     await page.getByText("Logout").click()
 
